@@ -14,7 +14,7 @@ par(mfrow=c(2,1))
 acf(niz,main="Vremenski niz") 
 #niz.trend=diff(niz)
 #len.trend=length(niz.trend)
-#plot(niz.trend[0:(len.trend-4)],niz.trend[5:(len.trend)],col="gray54",main="Diferencirani vremenski niz") #pod bez trenda!!!
+#plot(niz.trend[0:(len.trend-4)],niz.trend[5:(len.trend)],col="gray54",main="Diferencirani vremenski niz") 
 
 #seasonality 4
 #removing seasonality
@@ -203,5 +203,5 @@ podpredg=ts(pred.g,start=1200)
 #lines(podpred,lwd=2,lty=3)
 lines(podpredd,col="green",lwd=2,lty=3 )
 lines(podpredg,col="green",lwd=2,lty=3)
-for (i in 1:5)
-points(1200+i,niz4[i+1200],col="red")
+for (i in 1:5){
+points(1200+i,niz4[i+1200],col="red")}
